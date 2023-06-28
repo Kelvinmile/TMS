@@ -62,32 +62,32 @@ ResultSet rs;
 
         jPanel1.setBackground(new java.awt.Color(149, 165, 166));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); 
         jLabel1.setText("    Transport Management System");
 
-        jLabel2.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); 
         jLabel2.setForeground(new java.awt.Color(51, 0, 153));
         jLabel2.setText("Date");
 
         dateLab.setEditable(false);
-        dateLab.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        dateLab.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); 
         dateLab.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dateLabActionPerformed(evt);
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); 
         jLabel3.setForeground(new java.awt.Color(51, 0, 153));
         jLabel3.setText("Time");
 
         timeLab.setEditable(false);
-        timeLab.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        timeLab.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); 
 
         jPanel2.setBackground(new java.awt.Color(149, 165, 166));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        logBtn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        logBtn.setFont(new java.awt.Font("Tahoma", 1, 12)); 
         logBtn.setText("Login");
         logBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,17 +95,17 @@ ResultSet rs;
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 16)); 
         jLabel4.setText("LOGIN");
 
-        user1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        user1.setFont(new java.awt.Font("Tahoma", 1, 11)); 
 
-        user.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        user.setFont(new java.awt.Font("Tahoma", 1, 11)); 
 
-        jLabel6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 14));
         jLabel6.setText("Password");
 
-        jLabel5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 14));
         jLabel5.setText("User");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
