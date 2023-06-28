@@ -3,5 +3,4 @@
 <project name="Transport_mgt_sys" default="default" basedir=".">
     <description>Builds, tests, and runs the project Transport mgt sys.</description>
     <import file="nbproject/build-impl.xml"/>
-   
 </project>
