@@ -1,4 +1,3 @@
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
@@ -8,7 +7,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
-
 
 public class Home extends javax.swing.JFrame {
 
@@ -21,8 +19,7 @@ ResultSet rs;
         conn=javaconnect.ConnecrDb();
         showDate();
         showTime();
-    }
-    
+    }  
     void showDate(){
         Date d = new Date();
         SimpleDateFormat s = new SimpleDateFormat("YYYY-MM-dd");
@@ -39,8 +36,7 @@ ResultSet rs;
             }
         }).start();
    }
-
-    
+  
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
@@ -99,12 +95,9 @@ ResultSet rs;
         jLabel4.setText("LOGIN");
 
         user1.setFont(new java.awt.Font("Tahoma", 1, 11)); 
-
         user.setFont(new java.awt.Font("Tahoma", 1, 11)); 
-
         jLabel6.setFont(new java.awt.Font("Arial", 1, 14));
         jLabel6.setText("Password");
-
         jLabel5.setFont(new java.awt.Font("Arial", 1, 14));
         jLabel5.setText("User");
 
@@ -261,7 +254,6 @@ ResultSet rs;
             }
         });
     }
-
     
     private javax.swing.JTextField dateLab;
     private javax.swing.JLabel jLabel1;
@@ -276,5 +268,4 @@ ResultSet rs;
     private javax.swing.JTextField timeLab;
     private javax.swing.JTextField user;
     private javax.swing.JTextField user1;
-   
 }
