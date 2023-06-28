@@ -288,7 +288,7 @@ ResultSet rs;
 
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jTextField7.setFont(new java.awt.Font("Arial Narrow", 0, 11)); // NOI18N
+        jTextField7.setFont(new java.awt.Font("Arial Narrow", 0, 11)); 
         jTextField7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField7ActionPerformed(evt);
