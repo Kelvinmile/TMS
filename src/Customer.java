@@ -156,19 +156,19 @@ ResultSet rs;
             }
         });
 
-        jLabel7.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Arial", 1, 12));
         jLabel7.setText("LOCATION");
 
-        jComboBox1.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
+        jComboBox1.setFont(new java.awt.Font("Arial Narrow", 1, 11));
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "MALE", "FEMALE" }));
 
-        jComboBox2.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
+        jComboBox2.setFont(new java.awt.Font("Arial Narrow", 1, 11));
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3" }));
 
-        jLabel8.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Arial", 1, 12));
         jLabel8.setText("EMAIL");
 
-        jTextField5.setFont(new java.awt.Font("Arial Narrow", 0, 11)); // NOI18N
+        jTextField5.setFont(new java.awt.Font("Arial Narrow", 0, 11)); 
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -360,10 +360,10 @@ ResultSet rs;
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 24)); 
         jLabel9.setText("CUSTOMER");
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); 
         jLabel10.setText("Customer List");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -435,13 +435,13 @@ ResultSet rs;
         pack();
     }
 
-    private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
+    private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {
         Update();
         jTable1();
     }
 
     private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {
-        // add your handling code here
+        
     }
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {
@@ -462,7 +462,7 @@ ResultSet rs;
            pst.setString(6,jTextField4.getText());
            pst.setString(7,jTextField5.getText());
            pst.execute();
-           JOptionPane.showMessageDialog(null, "Successfully Customer Added.....!!!");
+           JOptionPane.showMessageDialog(null, "Successfully Customer Added!!!");
            rs.close();
            pst.close();
            jTable1();
@@ -473,13 +473,13 @@ ResultSet rs;
         jTable2();
     }
 
-    private void jTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable2MouseClicked
+    private void jTable2MouseClicked(java.awt.event.MouseEvent evt) {
         DefaultTableModel model = (DefaultTableModel)jTable2.getModel();
          int selectedRowIndex = jTable2.getSelectedRow();
          jTextField5.setText(model.getValueAt(selectedRowIndex, 1).toString());
     }
 
-    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
+    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {
         DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
          int selectedRowIndex = jTable1.getSelectedRow();
          jTextField1.setText(model.getValueAt(selectedRowIndex, 0).toString());
@@ -488,7 +488,7 @@ ResultSet rs;
          jTextField4.setText(model.getValueAt(selectedRowIndex, 5).toString());
     }
 
-    private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
+    private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {
         Search();
     }
 
