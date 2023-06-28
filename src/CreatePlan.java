@@ -106,7 +106,7 @@ ResultSet rs;
 
         jTextField1.setFont(new java.awt.Font("Arial Narrow", 0, 11));
 
-        jLabel7.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Arial", 1, 12)); 
         jLabel7.setText("DURATION");
 
         jTextField2.setFont(new java.awt.Font("Arial Narrow", 0, 11)); 
@@ -260,18 +260,18 @@ ResultSet rs;
         pack();
     }
 
-    private void btnDelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDelActionPerformed
+    private void btnDelActionPerformed(java.awt.event.ActionEvent evt) {
         Delete();
         jTable1();
     }
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {
         setVisible(false);
         Admin ob=new Admin();
         ob.setVisible(true);
     }
 
-    private void btnAddPlanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddPlanActionPerformed
+    private void btnAddPlanActionPerformed(java.awt.event.ActionEvent evt) {
          try{
         String sql = "INSERT INTO `plan`(`Id`, `PlanName`, `Speed`, `Cost`, `Duration`) VALUES (?,?,?,?,?)";
          pst=conn.prepareStatement(sql);
@@ -291,7 +291,7 @@ ResultSet rs;
          jTable1();
     }
 
-    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
+    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {
         DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
          int selectedRowIndex = jTable1.getSelectedRow();
          jTextField1.setText(model.getValueAt(selectedRowIndex, 0).toString());
@@ -303,11 +303,7 @@ ResultSet rs;
 
   
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
